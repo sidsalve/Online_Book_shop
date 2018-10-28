@@ -1,0 +1,13 @@
+--
+-- MySQL 5.5.8
+-- Tue, 23 May 2017 12:15:21 +0000
+--
+
+CREATE TABLE `admin` (
+   `uname` varchar(15),
+   `pass` varchar(15),
+   `cpass` varchar(15)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `admin` (`uname`, `pass`, `cpass`) VALUES 
+('sid@salve', 'sid', 'sid');

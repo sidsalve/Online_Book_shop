@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <style>
+body {
+    background: pink;
+}
+    .content1 {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+    position: relative;
+    
+    }
+       .footer {
+    max-width: 1200px;
+    margin: auto;
+    background: purple;
+    padding: 10px;
+        
+       
+}  
+
+    </style>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title></title>
+</head>
+
+<body>
+    <div class="content1">
+<center><b><h1><strong>ADD BOOK</strong></h1>
+    </b></center>
+    <hr>
+<form action="addbook.php" method="post" enctype="multipart/form-data" >
+  <table width="431" height="837" border="0" align="center">
+    <tr>
+      <td width="139"><strong>*Book Name:</strong></td>
+      <td width="230"><input name="n1" type="text" required></td>
+    </tr>
+    <tr>
+      <td><strong>*Author:</strong></td>
+      <td><input name="n2" type="text" id="author"></td>
+    </tr>
+    <tr>
+      <td><strong>*Publication:</strong></td>
+      <td><input name="n3" type="text" id="publication"></td>
+    </tr>
+    <tr>
+      <td><strong>*Edition:</strong></td>
+      <td><input name="n4" type="text" id="edition"></td>
+    </tr>
+    <tr>
+      <td><strong>*Category:</strong></td>
+      <td><select name="n5" required>
+        <option value="null" selected>------Select Category------</option>
+        <option value="Educational">Educational</option>
+        <option value="Novel">Novel</option>
+        <option value="Bussiness">Bussiness</option>
+        <option value="Biography">Biography</option>
+        <option value="Historical">Historical</option>
+        <option value="Scientific">Scientific</option>
+        <option value="Other">Other</option>
+      </select></td>
+    </tr>
+	
+    <tr>
+	
+      <td><strong>*Stream:</strong></td>
+      <td><select name="n6">
+	  <option value="null" selected>------Select Stream------</option>
+        <option value="Art">Art</option>
+        <option value="Science">Science</option>
+        <option value="Commerce">Commerce</option>
+      </select></td>
+    </tr>
+    <tr>
+      <td><strong>*Class;</strong></td>
+      <td><select name="n7" id="class">
+	  <option value="null" selected>------Select Class------</option>
+        <option value="B.C.S">B.C.S</option>
+        <option value="B.Sci">B.Sci</option>
+        <option value="M.Sci">M.Sci</option>
+        <option value="B.A">B.A</option>
+        <option value="M.A">M.A</option>
+        <option value="B.Com">B.Com</option>
+        <option value="M.Com">M.Com</option>
+      </select></td>
+    </tr>
+       
+    <tr>
+      <td><strong>*Year:</strong></td>
+      <td><select name="n8" id="year">
+	  <option value="null" selected>------Select Year------</option>
+        <option value="F.Y">F.Y</option>
+        <option value="S.Y">S.Y</option>
+        <option value="T.Y">T.Y</option>
+      </select></td>
+    </tr>
+    <tr>
+      <td><strong>*Pages:</strong></td>
+      <td><input name="n9" type="text" id="pages"></td>
+    </tr>
+    <tr>
+      <td><strong>*Price:</strong></td>
+      <td><input name="n10" type="text" id="price" required></td>
+    </tr>
+    <tr>
+      <td><strong>*Nos.:</strong></td>
+      <td><input name="n11" type="text" id="nos" required></td>
+    </tr>
+    <tr>
+      <td><strong>*Language:</strong></td>
+      <td><select name="n12" id="lang">
+	  <option value="null" selected>------Select Language------</option>
+        <option value="English">English</option>
+        <option value="Marathi">Marathi</option>
+        <option value="Hindi">Hindi</option>
+      </select></td>
+    </tr>
+    <tr>
+      <td><strong>*ISBN No.:</strong></td>
+      <td><input name="n13" type="text" id="isbnno"></td>
+    </tr>
+    <tr>
+      <td><strong>*Image Of Book: </strong></td>
+      <td><input name="image" type="file" id="image"></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><input type="submit" name="Submit" value="Submit"> </td>
+	  <td width="48"><input type="reset"> </td>
+    </tr>
+      
+  </table>
+</form>
+    <div class="footer">
+        <center><font size=4 color="white">**Admin Profile**</font></center><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="Back" onclick="history.go(-1);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="afterlogin.php" ><font color="white">Goto First Page</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="changepass.php"><font color="white">Change Password</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="logout.php"><font color="white">Logout</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="t&c.php"><font color="white">Terms And Conditions</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+          
+    </div>
+</body>
+</html>

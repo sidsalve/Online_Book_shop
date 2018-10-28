@@ -1,0 +1,22 @@
+--
+-- MySQL 5.5.8
+-- Tue, 16 May 2017 12:15:17 +0000
+--
+
+CREATE TABLE `purchase` (
+   `pid` int(11) not null auto_increment,
+   `bid` int(11),
+   `uid` int(11),
+   KEY `bid` (`bid`),
+   KEY `uid` (`uid`),
+   `date` varchar(50),
+   `paytype` varchar(20),
+   `bank_name` varchar(50),
+   `IFSC` varchar(50),
+   `card_type` varchar(20),
+   `puk_code` varchar(5),
+   PRIMARY KEY (`pid`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=13;
+
+INSERT INTO `purchase` (`pid`, `bid`, `uid`, `date`, `paytype`, `bank_name`, `IFSC`, `card_type`, `puk_code`) VALUES 
+('12', '7', '1', '2017.May.Tue 12:05:56', 'cash', '', '', '', '');
